@@ -7,12 +7,14 @@ import Header from "../components/Header.astro";
 import Navbar from "../components/Navbar.astro";
 ---
 
-<html lang="en">
+<html lang="en" data-theme="light">
 	<head>
 		<Header />
 	</head>
-	<body class="container mx-auto prose">
-		<Navbar />
-		<slot />
+	<body class="container mx-auto">
+		<div class="prose max-w-none">
+			<Navbar />
+			<slot />
+		</div>
 	</body>
 </html>

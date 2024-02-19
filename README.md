@@ -15,6 +15,23 @@ module.exports = {
   plugins: [require("daisyui")],
 }
 ```
+4. The official Tailwind CSS Typography plugin(`@tailwindcss/typography`) provides a set of prose classes:
+```sh
+npm install @tailwindcss/typography
+```
+5.  Then add the plugin to your `tailwind.config.js` files:
+```sh
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  theme: {
+    // ...
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+    // ...
+  ],
+}
+```
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/with-tailwindcss)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/with-tailwindcss)
