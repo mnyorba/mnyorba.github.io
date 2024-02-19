@@ -1,0 +1,18 @@
+---
+// Learn about using Astro layouts:
+// https://docs.astro.build/en/core-concepts/layouts/
+
+// Component Imports
+import Header from "../components/Header.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<html lang="en">
+	<head>
+		<Header />
+	</head>
+	<body class="container mx-auto prose">
+		<Navbar />
+		<slot />
+	</body>
+</html>
