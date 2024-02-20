@@ -1,0 +1,38 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+interface Props {
+	entry: CollectionEntry<'works'>;
+}
+
+// This is a dynamic route that generates a page for every Markdown file in src/content/
+// Read more about dynamic routes and this `getStaticPaths` function in the Astro docs:
+// https://docs.astro.build/en/core-concepts/routing/#dynamic-routes
+export async function getStaticPaths() {
+	const works = await getCollection('works');
+	return works.map((entry) => ({
+		params: { slug: entry.slug },
+		props: { entry },
+	}));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<BaseLayout title={entry.data.title} description={entry.data.description}>
+	<h2>Single works: {entry.data.title}</h2>
+	<main class="wrapper">
+		<div class="mx-4 bg-white shadow-xl p-8 text-slate-700 dark:bg-slate-800 dark:text-slate-400">
+			<div class="float-left mr-6">
+				<div class="relative aspect-w-4 aspect-h-5 sm:aspect-w-16 sm:aspect-h-9 w-full sm:w-72 lg:w-[32rem]">
+					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} class="float-start" />}
+				</div>
+			</div>
+			<div class="text-justify">
+				<Content />
+			</div>
+		</div>
+	</main>
+</BaseLayout>
