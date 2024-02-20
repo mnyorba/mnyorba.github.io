@@ -1,0 +1,57 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import { Debug } from "astro:components";
+import { isEmptyBindingElement } from "typescript";
+import { object } from "astro/zod";
+
+interface Props {
+	blog: CollectionEntry<"blog">;
+}
+
+// const allPost = await getCollection("blog");
+
+
+const allPost = (await getCollection("blog"))
+	.filter((f) => f.data.draft != true)
+	.sort(
+		(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
+	);
+// const allPost = allPost.filter(f=> f.data.draft != true).sort((a, b) => new Date(b.data.publishDate).valueOf() - new Date(a.data.publishDate).valueOf());
+
+// const { blog } = Astro.props.blog;
+// const { Content } = await blog.render();
+---
+
+<!-- <Debug {allPost } /> -->
+
+<BaseLayout>
+	<h1 class="text-center">Works</h1>
+	<div
+		class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:col-span-4 gap-4"
+	>
+		{
+			allPost.map((allPost) => (
+				<>
+					<div>
+						<span class="h-2">{allPost.data.tags.join(", ")}</span>
+						<a class="card" href={`/blog/${allPost.slug}`}>
+							<span class="h2">{allPost.data.title}</span>
+							<img
+								src={allPost.data.img}
+								alt={allPost.data.img_alt || ""}
+								loading="lazy"
+								decoding="async"
+							/>
+						</a>
+					</div>
+				</>
+			))
+		}
+	</div>
+	<div class="grid grid-cols-4 gap-4">
+		{allPost.map((allPost) => <div>{allPost.data.title}</div>)}
+	</div>
+</BaseLayout>

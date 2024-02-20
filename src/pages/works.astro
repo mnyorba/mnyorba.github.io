@@ -4,8 +4,6 @@ import { type CollectionEntry, getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 import { Debug } from "astro:components";
-const sum = (a: number, b: number) => a + b;
-const answer = sum(2, 4);
 
 interface Props {
 	works: CollectionEntry<"works">;
@@ -25,6 +23,8 @@ const allWorks = (await getCollection("works"))
 // const { works } = Astro.props.works;
 // const { Content } = await works.render();
 ---
+
+<!-- <Debug {allWorks } /> -->
 
 <BaseLayout>
 	<h1 class="text-center">Works</h1>
