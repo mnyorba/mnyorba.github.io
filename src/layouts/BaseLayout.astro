@@ -5,11 +5,32 @@
 // Component Imports
 import Header from "../components/Header.astro";
 import Navbar from "../components/Navbar.astro";
+
+//Import header settings
+import { headerSettings } from "../config";
+
+interface Props {
+	title?: string | undefined;
+	description?: string | undefined;
+}
+
+let { title, description } = Astro.props;
+
+if (title === undefined) {
+	title = headerSettings.websiteName;
+} else {
+	title = title + headerSettings.separator + headerSettings.websiteName;
+}
+if (description === undefined) {
+	description = headerSettings.description;
+} else {
+	description = description;
+}
 ---
 
 <html lang="en" data-theme="light">
 	<head>
-		<Header />
+		<Header title={title} description={description} />
 	</head>
 	<body class="container mx-auto">
 		<div class="prose max-w-none">

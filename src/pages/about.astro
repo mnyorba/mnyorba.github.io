@@ -2,16 +2,27 @@
 // Component Imports
 import Button from "../components/Button.astro";
 
+// Layout Imports
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+let title = "About";
+let description = "About M.Nyorba";
 ---
 
-<BaseLayout>
+<BaseLayout title={title} description={description}>
 	<h1 class="text-center">About</h1>
-	<p class="prose-stone">Lorem ipsum dolor sit amet <a href="#">consectetur adipisicing</a> elit. Maxime expedita deserunt nihil sunt voluptas sint enim maiores numquam vel. Repellat, eius. Dolores reiciendis explicabo accusamus fugiat corporis iure sunt reprehenderit.</p>
-	<p>Lorem ipsum dolor sit amet <a href="#">consectetur adipisicing</a> elit. Maxime expedita deserunt nihil sunt voluptas sint enim maiores numquam vel. Repellat, eius. Dolores reiciendis explicabo accusamus fugiat corporis iure sunt reprehenderit.</p>
+	<p class="prose-stone">
+		Lorem ipsum dolor sit amet <a href="#">consectetur adipisicing</a> elit.
+		Maxime expedita deserunt nihil sunt voluptas sint enim maiores numquam vel.
+		Repellat, eius. Dolores reiciendis explicabo accusamus fugiat corporis iure
+		sunt reprehenderit.
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet <a href="#">consectetur adipisicing</a> elit.
+		Maxime expedita deserunt nihil sunt voluptas sint enim maiores numquam vel.
+		Repellat, eius. Dolores reiciendis explicabo accusamus fugiat corporis iure
+		sunt reprehenderit.
+	</p>
 	<div class="grid place-items-center h-screen content-center">
 		<Button>Tailwind Button in Astro!</Button>
 		<button class="btn">About</button>

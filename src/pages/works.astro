@@ -1,16 +1,13 @@
 ---
+// Component Imports
 import { type CollectionEntry, getCollection } from "astro:content";
 
+// Layout Imports
 import BaseLayout from "../layouts/BaseLayout.astro";
-
-import { Debug } from "astro:components";
 
 interface Props {
 	works: CollectionEntry<"works">;
 }
-
-// const allWorks = await getCollection("works");
-// const { data, slug } = Astro.props.works;
 
 const allWorks = (await getCollection("works"))
 	.filter((f) => f.data.draft != true)
@@ -18,15 +15,11 @@ const allWorks = (await getCollection("works"))
 		(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
 	);
 
-// const allWorks = allWorks.filter(f=> f.data.draft != true).sort((a, b) => new Date(b.data.publishDate).valueOf() - new Date(a.data.publishDate).valueOf());
-
-// const { works } = Astro.props.works;
-// const { Content } = await works.render();
+let title = "Works";
+let description = "Learn about Mikhajlo Njorba's most recent works";
 ---
 
-<!-- <Debug {allWorks } /> -->
-
-<BaseLayout>
+<BaseLayout title={title} description={description}>
 	<h1 class="text-center">Works</h1>
 	<div
 		class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:col-span-4 gap-4"

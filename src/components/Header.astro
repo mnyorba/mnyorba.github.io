@@ -7,11 +7,9 @@ interface Props {
 	description?: string | undefined;
 }
 
-const {
-	title = 'M. Nyorba: Personal Site',
-	description = 'The personal site of Mikhajlo Nyorba',
-} = Astro.props;
+const { title = "Title Site", description = "Site Description" } = Astro.props;
 ---
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />

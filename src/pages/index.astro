@@ -2,13 +2,17 @@
 // Component Imports
 import Button from "../components/Button.astro";
 
+// Layout Imports
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
+
+let title = "Home";
+let description = 'The personal site of Mikhajlo Nyorba';
 ---
 
-<BaseLayout>
+<BaseLayout title={title} description={description}>
 	<div class="hero min-h-10 1min-h-screen bg-base-200 shadow-xl">
 		<div class="hero-content flex-col lg:flex-row-reverse">
 			<img
