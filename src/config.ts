@@ -43,10 +43,7 @@ export const headerSettings = {
 	separator: ' | ',
 	description: 'The personal site of Mikhajlo Nyorba',
 };
-export const headerSettings1: { websiteName: string; separator: string }[] = [
-	{
-		websiteName: 'M. Nyorba: Personal Site',
-		separator: ' | ',
-		// description: '',
-	},
-];
+export const footerSettings = {
+	year: 2022,
+	separator: ' | ',
+};

@@ -5,6 +5,7 @@
 // Component Imports
 import Header from "../components/Header.astro";
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 
 //Import header settings
 import { headerSettings } from "../config";
@@ -33,9 +34,12 @@ if (description === undefined) {
 		<Header title={title} description={description} />
 	</head>
 	<body class="container mx-auto">
-		<div class="prose max-w-none">
+		<div class="flex flex-col min-h-screen prose max-w-none">
 			<Navbar />
-			<slot />
+			<main>
+				<slot />
+			</main>
+			<Footer />
 		</div>
 	</body>
 </html>
