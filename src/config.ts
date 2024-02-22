@@ -1,40 +1,24 @@
 /** Main menu items */
-export const navItems: { label: string; href: string; parent: Array; }[] = [
+export const navItems: { label: string; href: string; }[] = [
 	{
 		label: 'Головна',
 		href: '/',
-		parent: []
 	},
 	{
 		label: 'Записи',
 		href: '/works/',
-		parent: [
-			{
-				label: 'Роботи',
-				href: '/works/',
-				parent: []
-			},
-			{
-				label: 'Публікації',
-				href: '/blog/',
-				parent: []
-			},
-		]
 	},
 	{
 		label: 'Роботи',
 		href: '/works/',
-		parent: []
 	},
 	{
 		label: 'Публікації',
 		href: '/blog/',
-		parent: []
 	},
 	{
 		label: 'Про мене',
 		href: '/about/',
-		parent: []
 	},
 ];
 
