@@ -1,5 +1,5 @@
 ---
-import { navItems } from "../config.ts";
+import { navItemsMain } from "../config.ts";
 import ThemeToggle from "./ThemeToggle.astro";
 ---
 
@@ -25,7 +25,7 @@ import ThemeToggle from "./ThemeToggle.astro";
 				class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
 			>
 				{
-					navItems.map(({ label, href }) => (
+					navItemsMain.map(({ label, href }) => (
 						<li>
 							<a
 								aria-current={Astro.url.pathname === href}
@@ -61,12 +61,12 @@ import ThemeToggle from "./ThemeToggle.astro";
 	<div class="navbar-center hidden lg:flex">
 		<ul class="menu menu-horizontal px-1">
 			{
-				navItems.map(({ label, href }) => (
+				navItemsMain.map(({ label, href }) => (
 					<li>
 						<a
 							aria-current={Astro.url.pathname === href}
 							class:list={[
-								"link",
+								"link no-underline",
 								{
 									active:
 										Astro.url.pathname === href ||
@@ -98,9 +98,3 @@ import ThemeToggle from "./ThemeToggle.astro";
 		<ThemeToggle />
 	</div>
 </nav>
-
-<style>
-	a {
-		text-decoration: none;
-	}
-</style>

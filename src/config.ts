@@ -1,13 +1,25 @@
 /** Main menu items */
-export const navItems: { label: string; href: string; }[] = [
+export const navItemsMain: { label: string; href: string; }[] = [
 	{
 		label: 'Головна',
 		href: '/',
 	},
 	{
-		label: 'Записи',
+		label: 'Роботи',
 		href: '/works/',
 	},
+	{
+		label: 'Публікації',
+		href: '/blog/',
+	},
+	{
+		label: 'Про мене',
+		href: '/about/',
+	},
+];
+
+/** Footer menu items */
+export const navItemsFooter: { label: string; href: string; }[] = [
 	{
 		label: 'Роботи',
 		href: '/works/',
