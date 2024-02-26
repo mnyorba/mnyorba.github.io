@@ -4,6 +4,7 @@ import Button from "../components/Button.astro";
 
 // Layout Imports
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Skills from "../components/Skills.astro";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -13,7 +14,7 @@ let description = "The personal site of Mikhajlo Nyorba";
 ---
 
 <BaseLayout title={title} description={description}>
-	<div class="hero min-h-10 1min-h-screen bg-base-100 1shadow-xl">
+	<div class="hero min-h-10 1min-h-screen bg-base-100 shadow-xl">
 		<div class="hero-content flex-col lg:flex-row-reverse">
 			<img
 				src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
@@ -86,6 +87,7 @@ let description = "The personal site of Mikhajlo Nyorba";
 			</div>
 		</div>
 	</div>
+	<Skills />
 	<div class="grid place-items-center h-screen1 content-center1">
 		<Button>Tailwind Button in Astro!</Button>
 		<button class="btn">Button</button>

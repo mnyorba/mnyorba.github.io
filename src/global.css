@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Changing CSS values to customize themes. */
+:root,
+:root:has(input.theme-controller[value="dark"]:checked) {
+	--rounded-btn: .0rem;
+}

@@ -3,7 +3,7 @@
 // https://docs.astro.build/en/core-concepts/layouts/
 
 // Component Imports
-import Header from "../components/Header.astro";
+import Head from "../components/Head.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 
@@ -31,15 +31,19 @@ if (description === undefined) {
 
 <html lang="en">
 	<head>
-		<Header title={title} description={description} />
+		<Head title={title} description={description} />
 	</head>
 	<body class="container mx-auto">
 		<div class="flex flex-col min-h-screen prose max-w-none">
-			<Navbar />
-			<main>
+			<header>
+				<Navbar />
+			</header>
+			<main class="mt-4 mb-16">
 				<slot />
 			</main>
-			<Footer />
+			<footer>
+				<Footer />
+			</footer>
 		</div>
 	</body>
 </html>
