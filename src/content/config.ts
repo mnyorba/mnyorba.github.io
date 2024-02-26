@@ -13,6 +13,7 @@ export const worksCollections = {
 			tags: z.array(z.string()),
 			img: z.string(),
 			img_alt: z.string().optional(),
+			img_figcaption: z.string().optional(),
 		}),
 	}),
 };
@@ -28,6 +29,7 @@ export const blogCollections = {
 			tags: z.array(z.string()),
 			img: z.string(),
 			img_alt: z.string().optional(),
+			img_figcaption: z.string().optional(),
 		}),
 	}),
 };

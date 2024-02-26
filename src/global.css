@@ -7,3 +7,16 @@
 :root:has(input.theme-controller[value="dark"]:checked) {
 	--rounded-btn: .0rem;
 }
+
+:root .prose .card,
+:root:has(input.theme-controller[value="dark"]:checked) .prose .card,
+:root:has(input.theme-controller[value="dark"]:checked) .prose .card p,
+:root:has(input.theme-controller[value="dark"]:checked) .prose .card .fill-current {
+	/* --tw-prose-headings: var(oklch(var(--bc)/1)); */
+
+	/* --tw-prose-headings: var(--tw-prose-links); */
+	/* --tw-prose-headings: #111827;
+	--tw-prose-body: #111827 !important;
+	--tw-prose-bold: #111827; */
+	/* --tw-prose-captions: #111827; */
+}
