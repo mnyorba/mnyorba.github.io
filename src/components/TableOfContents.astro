@@ -1,7 +1,7 @@
 ---
-interface Props {
-	headings: [];
-}
+// interface Props {
+// 	headings: MarkdownHeading[];
+// }
 const { headings } = Astro.props;
 ---
 
@@ -13,31 +13,42 @@ const { headings } = Astro.props;
 		<h2 class="mt-0 pl-5">Зміст</h2>
 		<ul class="menu menu-vertical px-1">
 			{
-				headings.map(({ depth, slug, text }) => (
-					<li class="my-0">
-						<a
-							aria-current={Astro.url.pathname === slug}
-							class:list={[
-								"link no-underline",
-								{
-									active:
-										Astro.url.pathname === slug ||
-										(slug !== "/" &&
-											Astro.url.pathname.startsWith(
-												slug,
-											)),
-								},
-								{ "pl-1": depth === 1 },
-								{ "pl-3": depth === 2 },
-								{ "pl-4": depth === 3 },
-								{ "pl-5": depth === 4 },
-							]}
-							href={"#" + slug}
-						>
-							{text}
-						</a>
-					</li>
-				))
+				// headings.map(({ depth, slug, text }) => (
+				headings.map(
+					({
+						depth,
+						slug,
+						text,
+					}: {
+						depth: number;
+						slug: string;
+						text: string;
+					}) => (
+						<li class="my-0">
+							<a
+								aria-current={Astro.url.pathname === slug}
+								class:list={[
+									"link no-underline",
+									{
+										active:
+											Astro.url.pathname === slug ||
+											(slug !== "/" &&
+												Astro.url.pathname.startsWith(
+													slug,
+												)),
+									},
+									{ "pl-1": depth === 1 },
+									{ "pl-3": depth === 2 },
+									{ "pl-4": depth === 3 },
+									{ "pl-5": depth === 4 },
+								]}
+								href={"#" + slug}
+							>
+								{text}
+							</a>
+						</li>
+					),
+				)
 			}
 		</ul>
 	</div>
