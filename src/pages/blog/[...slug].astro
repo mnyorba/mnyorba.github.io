@@ -4,6 +4,7 @@ import { type CollectionEntry, getCollection } from "astro:content";
 
 // Layout Imports
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import TableOfContents from "../../components/TableOfContents.astro";
 
 interface Props {
 	entry: CollectionEntry<"blog">;
@@ -21,17 +22,16 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content, headings } = await entry.render();
 ---
 
-<!-- <Debug {blog } /> -->
 <BaseLayout title={entry.data.title} description={entry.data.description}>
 	<h2>{entry.data.title}</h2>
 	<article class="container">
 		<div class="shadow-xl p-4">
 			<div class="grid grid-cols-12">
 				<div
-					class="col-start-1 col-end-13 md:col-end-10 order-2 md:order-1 px-2"
+					class="col-start-1 col-end-13 md:col-end-8 lg:col-end-9 xl:col-end-10 order-2 md:order-1 px-2"
 				>
 					<div class="float-left mr-6">
 						<div
@@ -50,13 +50,7 @@ const { Content } = await entry.render();
 					</div>
 					<Content />
 				</div>
-				<aside
-					class="col-start-1 md:col-start-10 col-end-13 order-1 md:order-2 bg-slate-100 px-2"
-				>
-					<div class="sticky top-0">
-						<h2>TOC</h2>
-					</div>
-				</aside>
+				<TableOfContents headings={headings} />
 			</div>
 		</div>
 	</article>

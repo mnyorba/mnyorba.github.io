@@ -16,4 +16,9 @@ export default defineConfig({
 			}
 		),
 	],
+	markdown: {
+		// Applied to .md and .mdx files
+		// remarkPlugins: [[remarkToc, { heading: "contents" }]],
+		// rehypePlugins: [rehypeAccessibleEmojis],
+	},
 });
