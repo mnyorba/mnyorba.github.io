@@ -1,12 +1,11 @@
 ---
-import { string } from "astro/zod";
-
 const { headings } = Astro.props;
-{
+
+type headings = {
 	depth: Number;
 	slug: string;
 	text: string;
-}
+};
 ---
 
 <aside
