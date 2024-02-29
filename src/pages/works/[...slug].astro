@@ -4,6 +4,7 @@ import { type CollectionEntry, getCollection } from "astro:content";
 
 // Layout Imports
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import TableOfContents from "../../components/TableOfContents.astro";
 
 interface Props {
 	entry: CollectionEntry<"works">;
@@ -21,40 +22,36 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content, headings } = await entry.render();
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
-	<h2>{entry.data.title}</h2>
-	<main class="wrapper">
-		<div class="mx-4 shadow-2xl p-8">
-			<div
-				class="float-right pr-6 prose-figure:image-full prose-figure:mr-6"
-			>
+	<article id="toc-text" class="container mx-auto">
+		<h2>{entry.data.title}</h2>
+		<div class="shadow-xl p-4">
+			<div class="grid grid-cols-12">
 				<div
-					class="relative aspect-w-4 aspect-h-5 sm:aspect-w-16 sm:aspect-h-9 w-full sm:w-72 lg:w-[32rem]"
+					class="col-start-1 col-end-13 md:col-end-8 lg:col-end-9 xl:col-end-10 order-2 md:order-1 px-2"
 				>
-					{
-						entry.data.img && (
-							<>
-								<figure>
+					<div class="float-left mr-6">
+						<div
+							class="relative aspect-w-4 aspect-h-5 sm:aspect-w-16 sm:aspect-h-9 w-full sm:w-72 lg:w-[32rem]"
+						>
+							{
+								entry.data.img && (
 									<img
 										src={entry.data.img}
 										alt={entry.data.img_alt || ""}
-										class="float-start mb-4"
+										class="float-start"
 									/>
-									<figcaption>
-										{entry.data.img_figcaption || ""}
-									</figcaption>
-								</figure>
-							</>
-						)
-					}
+								)
+							}
+						</div>
+					</div>
+					<Content />
 				</div>
-			</div>
-			<div>
-				<Content />
+				<TableOfContents headings={headings} />
 			</div>
 		</div>
-	</main>
+	</article>
 </BaseLayout>
