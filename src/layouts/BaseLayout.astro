@@ -29,19 +29,21 @@ if (description === undefined) {
 }
 ---
 
-<html lang="en" class="scroll-smooth focus:scroll-auto">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<Head title={title} description={description} />
 	</head>
-	<body class="container mx-auto">
-		<div class="flex flex-col min-h-screen prose max-w-none">
-			<header>
+	<body class="container1mx-auto">
+		<div class="flex flex-col min-h-screen prose max-w-none relative">
+			<header
+				class="top-0 left-0 w-full z-[1024] py-0 md:py-22 xs:h-64 lg:h-28 sticky1 shadow-md transition-all duration-300 opacity-100"
+			>
 				<Navbar />
 			</header>
 			<main class="mt-4 mb-16 px-2">
 				<slot />
 			</main>
-			<footer>
+			<footer class="bg-base-300 text-base-content">
 				<Footer />
 			</footer>
 		</div>

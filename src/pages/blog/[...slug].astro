@@ -26,8 +26,8 @@ const { Content, headings } = await entry.render();
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
-	<h2>{entry.data.title}</h2>
-	<article class="container">
+	<article id="toc-text" class="container mx-auto">
+		<h2>{entry.data.title}</h2>
 		<div class="shadow-xl p-4">
 			<div class="grid grid-cols-12">
 				<div

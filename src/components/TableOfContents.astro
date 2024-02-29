@@ -9,7 +9,7 @@ const { headings } = Astro.props;
 	id="#toc"
 	class="col-start-1 md:col-start-8 lg:col-start-9 xl:col-start-10 col-end-13 order-1 md:order-2 px-2"
 >
-	<div id="toc" class="sticky top-0">
+	<div id="toc" class="sticky top-28">
 		<h2 class="mt-0 pl-5">Зміст</h2>
 		<ul class="menu menu-vertical px-1">
 			{
@@ -73,6 +73,7 @@ const { headings } = Astro.props;
 				// add active class to the currently active entry
 				tocLinkEl.classList.add("active");
 			}
+			// .querySelector("#toc-text").addclass.classList.add("success");
 		}
 	};
 
