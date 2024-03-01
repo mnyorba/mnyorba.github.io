@@ -1,7 +1,7 @@
 ---
 title: Валеологія у житті вчителя
 publishDate: 2024-01-02 00:00:00
-img: /assets/content/images/teacher.jpg
+img: /content/images/teacher.jpg
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 img_figcaption: Валеологія у житті вчителя
 description: |
