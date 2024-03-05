@@ -2,12 +2,15 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import icon from "astro-icon";
 
+// LaTEX
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 // https://astro.build/config
-export default defineConfig(
-	{
-		site: 'https://mnyorba.github.io',
-		integrations: [
+export default defineConfig({
+	site: 'https://mnyorba.github.io',
+	integrations:
+		[
 			tailwind(
 				{
 					// Example: Disable injecting a basic `base.css` import on every page.
@@ -18,12 +21,15 @@ export default defineConfig(
 					nesting: true
 				}
 			),
-			// icon(),
 			icon(
 				{
 					iconDir: "src/icons",
 				}
-			)
+			),
 		],
+	markdown:
+	{
+		remarkPlugins: [remarkMath],
+		rehypePlugins: [rehypeKatex],
 	}
-);
+});

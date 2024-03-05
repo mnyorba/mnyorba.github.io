@@ -20,3 +20,9 @@
 	--tw-prose-bold: #111827; */
 	/* --tw-prose-captions: #111827; */
 }
+
+/* .katex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+} */
