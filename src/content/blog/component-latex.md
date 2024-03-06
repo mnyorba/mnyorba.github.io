@@ -5,12 +5,13 @@ publishDate: 2024-03-01 19:05:00
 img: /content/images/latex_project.jpg
 img_alt: LaTeX в Markdown для Astro
 description: |
-  Створення компонента для фреймворку Astro для выдображення.
-  Як створити компонент Astro для відображення LaTeX у файлах Markdown або MDX.
+  Рендеринг LaTeX Math в фреймворку Astro для Markdown.
+  Підключення плагінів remark для відображення LaTeX у файлах Markdown або MDX для Astro.
 tags:
   - LaTeX
   - Markdown
   - Astro
+  - remark
 ---
 
 ## LaTeX
