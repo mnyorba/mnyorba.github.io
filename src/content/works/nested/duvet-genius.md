@@ -12,12 +12,97 @@ tags:
   - Трейтяк В. В.
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
+## Математичне моделювання
+Під математичним моделюванням розуміють
+процес установлення відповідності математичного об’єкта (ма
+тематичної моделі) до реального названого та дослідження цієї
+моделі, що дозволяє отримувати характеристики розглянутого
+об’єкта.
 
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida. In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra posuere purus ac imperdiet. Nulla facilisi.
+Вид математичної моделі залежить як від природи
+об’єкта, так і від завдань із його дослідження, необхідної ймовірно
+сті і точності вирішення цього завдань. Будь-яка математична мо
+дель описує реальний об’єкт, але з певним наближенням.
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+Математичне моделювання з дослідження характеристик проце-
+су функціонування систем поділяють на аналітичне, числове, ста
+тистичне, імітаційне та комбіноване.
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Для аналітичного моделювання характерним є те, що процеси
+функціонування елементів системи подаються у вигляді функціо
+нальних співвідношень або за принципом логіки.
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+числовий метод дозволяє досліджу
+вати ширший діапазон класу систем, проте отримані при цьому
+розв’язки мають індивідуальний характер.
+
+Під час імітаційного моделювання алгоритм, що реалізує мо
+дель, відтворює процес функціонування системи в часі.
+
+Комбіноване (аналітико-імітаційне) моделювання при аналізі
+та синтезі систем дозволяє об’єднати переваги аналітичного та
+імітаційного моделювання.
+
+## Технічна система
+Одним із сучасних принципів наукової та проектної діяльності
+розробника є творче ставлення до об’єктів дослідження і проекту
+вання і відповідних їм виробничих процесів. Надалі сукупність
+об’єктів, систем, приладів та процесів їх розроблення, виготовлення
+та експлуатації називатимемо узагальненим терміном «технічна сис
+тема».
+
+Для того щоб визначити об’єкт як систему, треба мати:
+– об’єкт, що складається з множини елементів та їх властивос
+тей, які можна розглядати як єдине ціле завдяки зв’язкам між ними
+та їх властивостями;
+
+– дослідника, який виконує цілеспрямовану дію (роботу);
+
+– завдання, з погляду розв’язання якого об’єкт виділяється до
+слідником як система;
+
+– мову, якою дослідник може описати об’єкт, властивості його
+елементів та зв’язки.
+
+Прикладами систем є:
+1) сонячна система;
+2) обчислювальний центр;
+3) промислове підприємство;
+4) система лінійних рівнянь;
+5) інформаційно-вимірювальний пристрій;
+6) операційна система комп’ютера;
+7) система управління підприємством.
+
+## Класифікація математичних моделей
+
+Математичні моделі можна згрупувати за допомогою трьох основних критеріїв:
+1) поведінки моделей у часі;
+2) виду вхідної інформації, параметрів і виразів, які складають математичну модель;
+3) типу математичного апарату.
+
+Критерій 1. Математичні моделі бувають:
+
+− динамічними (час відіграє роль незалежної змінної і поведінка
+системи змінюється в часі);
+
+− статичними (поведінка системи не залежить від часу);
+
+− квазістатичними (поведінка системи змінюється від одного
+статичного стану до іншого залежно від зовнішнього впливу).
+
+Критерій 2. Якщо елементи математичної моделі встановлені
+досить точно, і поведінку системи можна визначити, то математична модель детермінована, у противному випадку – стохастична.
+Якщо інформація й параметри є безперервними величинами, а математичні зв’язки постійними, то математична модель безперервна,
+в протилежному випадку – дискретна.
+
+Критерій 3. Математичні моделі можуть мати лінійні й неліній-
+ні складові та розглядатись, залежно від математичної проблеми, як такі типи:
+
+− рівняння (алгебричні, диференціальні тощо);
+
+− апроксимаційні задачі (інтерполяції, екстраполяції, числового
+інтегрування та диференціювання);
+
+− задачі оптимізації;
+
+− стохастичні задачі.

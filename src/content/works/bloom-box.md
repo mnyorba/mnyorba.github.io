@@ -12,12 +12,71 @@ tags:
   - Н. Е. Ковшун
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
+## Проект це
+Проект — це
+діяльність, за якої матеріальні, фінансові та людські ресурси
+організовано новаторським шляхом для виконання унікальної
+роботи при обмеженні у часі та витратах, щоб досягти позитивних
+змін, визначених кількісними та якісними параметрами.
 
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida. In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra posuere purus ac imperdiet. Nulla facilisi.
+  В умовах розвитку економіки знань важливу роль мають наукові
+проекти. Одним із основних пріоритетів є інтеграція України до
+Європейського дослідницького простору. Цьому сприяє двостороння
+міжнародна співпраця з країнами-членами ЄС, з країнами східного 
+партнерства, участь у Рамковій програмі ЄС з досліджень та інновацій
+«Горизонт 2020».
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+  Якщо запитати досвідченого керівника проекту про основне
+завдання під час його виконання, він радше за все відповість: «Зробити
+так, щоб роботу було виконано!» Це — універсальне кредо менеджера
+проекту. Якщо він матиме більше часу на роздуми, то, напевне, додасть:
+«Моє найголовніше завдання — зробити так, щоб робота виконувалася в
+заданих обсягах (відповідно до технічного завдання), вчасно і в межах
+виділених коштів».
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+## Управління проектом
+Управління проектом — це процес управління
+командою і ресурсами проекту за допомогою специфічних методів,
+завдяки яким проект завершується успішно і досягає своєї мети.
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+Чому управління проектами виокремилось у самостійну галузь
+менеджменту? Можна вказати щонайменше чотири причини:
+1. Підвищуються темпи змін у промисловості
+2. Умови ринку стають більш вибагливими, проекти —
+масштабнішими і такими, що потребують більшого
+професіоналізму в управлінні.
+3. управління проектами відрізняється від іншої управлінської діяльності.
+4. Поглиблюються проблеми інтеграції як різних компаній, так
+і різних видів діяльності у ході виконання проектів.
+
+## Управління проектами як систематична дисцепліна
+Самостійною дисципліною управління проектами стало
+завдяки знанням та інструментарію, які було одержано в результаті
+вивчення загальних закономірностей, притаманних проектам в усіх
+галузях діяльності. Вони дають змогу вирішити такі завдання:
+― визначення цілей проекту та його обґрунтування;
+
+― формування структури проекту (підцілі, основні етапи роботи
+тощо);
+
+― визначення необхідних обсягів і джерел фінансування;
+
+― добір виконавців, наприклад, через процедури торгів і
+конкурсів;
+
+― підготовка і укладання контрактів;
+
+― визначення термінів виконання проекту, складання графіка його
+реалізації, обчислення необхідних ресурсів;
+
+― проведення калькуляції й аналізу витрат;
+
+― планування і врахування ризиків;
+
+― аналіз виконання проекту, в тому числі добір «команди»
+проекту;
+
+― забезпечення контролю за ходом виконання проекту тощо.
+
+Завдання управління проектами — досягти встановлених цілей за
+показниками обсягів, часу, затрат (бюджету), якості.
