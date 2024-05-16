@@ -1,70 +1,157 @@
 ---
 draft: false
-title: Bloom Box
+title: Основи алгоритмізації та програмування
 publishDate: 2019-12-01 00:00:00
-img: /content/images/stock-2.jpg
+img: /content/images/model.jpg
 img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
 description: |
   We paired with a cutting-edge music API and a team of horticulturalists
   to build AI-generated playlists that maximize houseplant health.
 tags:
-  - Dev
-  - Branding
-  - Backend
+  - Й.Я. Ривкінд, 
+  - Т.І. Лисенко
 ---
+## Моделі та об’єкти
 
-## Header 2
+Для вивчення властивостей і взаємозв’язків об’єктів (предметів, про-
+цесів або явищ) люди проводять різноманітні дослідження. Але не зав-
+жди можна або доцільно досліджувати самі предмети, процеси або яви-
+ща безпосередньо. У таких випадках створюють і досліджують не самі
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
+об’єкти, а їхні моделі. Термін модель походить від латинського слова
+modulus – зразок, аналог.
+Моделі створюють для дослідження об’єктів тоді, коли сам об’єкт
+недоступний і його неможливо дослідити безпосередньо (наприклад,
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+зірка сузір’я Великої Ведмедиці або виверження вулкана), або коли до-
+слідження об’єкта можуть призвести до його руйнування (наприклад,
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+мостовий перехід), або коли його виготовлення потребує значних коштів
+(наприклад, забудова нового мікрорайону) тощо.
+Моделі об’єктів створюють не тільки тоді, коли вони недоступні або
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+дорого коштують, а й тоді, коли потрібно дослідити конкретну власти-
+вість або групу властивостей об’єкта. У таких випадках створюють мо-
+дель об’єкта, яка обов’язково має ті властивості, що досліджуються, а
 
-## Header 2 1
+інші властивості, що є несуттєвими для даного дослідження, можуть
+бути в моделі відсутні.
 
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida. In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra posuere purus ac imperdiet. Nulla facilisi.
+1. Наведіть приклади об’єктів, їхніх властивостей і значень цих власти-
+востей.
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+2. Хто такі модельєри? Що створюють представники цієї професії?
+3. Які моделі об’єктів ви знаєте? Для чого вони створюються? На яких
+уроках і як використовувалися моделі об’єктів?
+4. Які процеси або явища можуть бути описані функцією y = kx?
+Моделями є знайомі вам карта України та глобус у кабінеті географії,
+моделі геометричних тіл у кабінеті математики, моделі органів людини в
+кабінеті біології, план спортивного майданчика вашої школи, малюнок
+нового автомобіля, словесний опис незнайомої вам людини.
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Люди створюють моделі одягу для вивчення попиту на них, моделі лі-
+таків для вивчення їхніх аеродинамічних властивостей, моделі корпусів
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+автомобілів для вивчення їхньої міцності, моделі нових архітектурних
+ансамблів для вивчення їхньої сумісності з уже існуючими, моделюють
+хімічний експеримент для вивчення його наслідків тощо. Учені-фізики
 
-### Header 3 Sed pulvinar porttitor
+моделюють рух тіла під дією різних сил, процес ядерної реакції, створи-
+ли модель так званої ядерної зими для ілюстрації наслідків застосування
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+ядерної зброї, сейсмологи моделюють землетруси, щоб вивчити їхні на-
+слідки для різних регіонів планети, економісти створюють моделі розви-
+тку суспільства.
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Множину всіх предметів, властивості яких і відношення між
+якими досліджуються, називають предметною областю цього
+дослідження.
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Так предметною областю дослідження для зоологів є множина тва-
+рин, предметною областю для математиків під час дослідження поділь-
+ності чисел є множина цілих чисел.
 
-#### Header 4 Lorem ipsum dolor sit
+Модель об’єкта – це новий об’єкт, який відображає властивос-
+ті об’єкта, суттєві для даного дослідження.
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+Процес створення та дослідження об’єктів на основі їхніх мо-
+делей називається моделюванням.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium impedit sequi alias ullam expedita, laboriosam quibusdam ipsam minima odit velit officiis. Officia quia rem quibusdam temporibus? Reprehenderit necessitatibus consequuntur nisi?
+Зазначимо, що в різних науках досліджують різні властивості об’єктів.
+І тому для кожного об’єкта можуть існувати різні моделі. Це залежить від
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+того, які саме властивості досліджуються. Так, різними будуть моделі лю-
+дини у дослідженнях фізика, хіміка, біолога, лікаря, модельєра.
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+З іншого боку, різні об’єкти можуть мати одну й ту саму модель. Так,
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+прямокутний паралелепіпед може бути моделлю книжки, шафи для одя-
+гу, будинку та багатьох інших об’єктів. А функція у=kх може слугувати
 
-## Header 2 3
+моделлю прямолінійного руху матеріальної точки з постійною швидкіс-
+тю, змінення напруги електричної мережі залежно від сили струму при
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium impedit sequi alias ullam expedita, laboriosam quibusdam ipsam minima odit velit officiis. Officia quia rem quibusdam temporibus? Reprehenderit necessitatibus consequuntur nisi?
+постійному опорі, вартості покупки картоплі залежно від маси покупки
+та ін.
+Можна стверджувати, що будь-яка розумова діяльність людини являє
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+собою оперування образами предметів, процесів і явищ, які є, по суті, їх-
+німи моделями. Дійсно, міркуючи про конкретний об’єкт, людина виді-
+ляє з усіх його властивостей лише окремі, які стосуються мети його розу-
+мової діяльності про предмети або явища, що досліджуються.
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+## Поділи моделей
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+За галузями використання моделі розподіляють на навчальні, дослідницькі та ігрові.
+Модель - це абстрактне відображення реального об'єкта, процесу або явища, яке дозволяє досліджувати їхні властивості і взаємозв'язки, здійснювати експерименти та прогнозувати їхню поведінку безпосередньо на самому об'єкті.
+Приклади об'єктів і їхніх властивостей:
+    • Зірка сузір'я Великої Ведмедиці: температура, відстань від Землі, яскравість.
+    • Мостовий перехід: довжина, міцність матеріалу, пропускна спроможність.
+    • Новий мікрорайон: площа, кількість будівель, інфраструктура.
+    • Автомобіль: швидкість, маса, витрати пального.
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+### Модельєри
+Модельєри - це фахівці, які створюють моделі об'єктів або процесів для подальшого дослідження, аналізу чи використання в практичних цілях.
+      Моделі об'єктів можуть бути:
+    • Моделі геогМрафічних об'єктів (карти, глобуси) для вивчення географічних властивостей регіонів.
+    • Моделі математичних об'єктів (графіки функцій) для аналізу математичних закономірностей.
+    • Моделі біологічних об'єктів (макети організмів) для дослідження біологічних процесів.
+    • Моделі соціальних об'єктів (економічні моделі) для аналізу соціальних взаємозв'язків.
+      Різні об’єкти можуть мати одну й ту саму модель. Процеси або явища, які можуть бути описані функцією y=kx, включають:
+    1. Рух матеріальної точки з постійною швидкістю.
+    2. Зміна напруги в електричній мережі при постійному опорі.
+    3. Залежність вартості покупки від маси товару при фіксованій ціні за кілограм.
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+#### Поділ моделей
+За галузями використання моделі розподіляють на:
+
+ навчальні – створюються для навчання (наочні посібники, тренаже-
+ри, що створюють для навчання, наприклад тренажер літака для на-
+вчання льотчиків, тренажер для імітації перевантажень під час виве-
+дення на орбіту в космічному польоті та ін.);
+
+ дослідницькі – створюються для проведення досліджень (модель річ-
+кового теплохода, гелікоптера, гідростанції для проведення дослі-
+джень на міцність, плавучість, аеродинамічні властивості, вплив на
+
+екологію, модель комп’ютера, прилад, що імітує розряд блискавки та
+
+ін., а також формули, рівняння, функції та ін., які можна використа-
+ти для дослідження об’єктів);
+ігрові – створюються для моделювання ситуацій для розробки і пере-
+вірки різноманітних стратегій поведінки, адаптації до певних умов
+(військові, економічні, спортивні, ділові ігри та ін.).
+За фактором часу моделі розподіляють на:
+
+ статичні – це моделі, в яких зафіксовано стан об’єкта в певний мо-
+мент часу і подальші зміни цього об’єкта не враховуються, наприклад
+
+гіпсова модель піраміди Хеопса;
+
+ динамічні – це моделі, які призначені для дослідження змінення зна-
+чень властивостей об’єкта з часом, наприклад модель змінення рівня
+води в гірських річках під час танення снігів; модель погоди в даному
+регіоні; 
+модель Сонячної системи, що змінюється залежно від резуль-
+татів нових досліджень. 
